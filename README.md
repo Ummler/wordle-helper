@@ -1,5 +1,7 @@
 # ReadMe
 
+In the NYT Wordle all guesses from the list `validWordlePossible.txt` are accepted to be entered but only the words from the list `validWordleNYT.txt` are possible solutions.
+
 ## wordleHelper.py
 
 `wordleHelper.py` filtert fünf-Buchstaben-Wörter aus einer Textdatei entsprechend Wordle-Hinweisen.
@@ -11,7 +13,7 @@ python3 wordleHelper.py [-f DATEI]
                         -n L [...]
 ```
 
-* `-f` Wortliste (Standard: `validWordleWords.txt`)
+* `-f` Wortliste (Standard: `validWordleNYT.txt`)
 * `-g` grün: Buchstabe **L** genau an Position **#**
 * `-y` gelb: Buchstabe **L** im Wort, aber **nicht** an Position **#**
 * `-n` grau: Buchstabe **L** darf gar nicht vorkommen
@@ -60,3 +62,6 @@ python3 wordleHelper.py -g o3 t4 -n w e r d i | python3 sortLetters.py -n o t
 ```
 
 
+## Hinweis
+
+Durch das Verketten von `grep` kann man effektiv Wörter finden, welche möglichst viele Buchstaben beinhalten, welche durch `./sortLetters` herausgefunden wurden.

@@ -56,7 +56,7 @@ def matches(word: str,
 
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("-f", "--file", default="validWordleWords.txt")
+    ap.add_argument("-f", "--file", default="validWordleNYT.txt")
     ap.add_argument("-g", "--green",  nargs="+", default=[], metavar="L#")
     ap.add_argument("-y", "--yellow", nargs="+", default=[], metavar="L#")
     ap.add_argument("-n", "--notin",  nargs="+", default=[], metavar="L")
